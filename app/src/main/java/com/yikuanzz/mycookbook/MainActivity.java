@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Fragment 创建
     private Fragment oneFragment, twoFragment, threeFragment;
-    private List<Fragment> fragarrList = new ArrayList<>();
+    private final List<Fragment> fragarrList = new ArrayList<>();
     private int position = 0;
 
     // initData 实例化碎片

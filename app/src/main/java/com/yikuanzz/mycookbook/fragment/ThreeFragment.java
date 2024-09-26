@@ -10,13 +10,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.yikuanzz.mycookbook.R;
+
 public class ThreeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        assert container != null;
-        TextView textView = new TextView(container.getContext());
-        textView.setText("第三个页面-占位");
-        return textView;
+//        assert container != null;
+//        TextView textView = new TextView(container.getContext());
+//        textView.setText("第三个页面-占位");
+//        return textView;
+        return inflater.inflate(R.layout.fragment_personalcenter, container, false);
     }
 }
